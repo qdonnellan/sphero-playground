@@ -28,7 +28,7 @@ After install is complete, make it the default version
 	
 	
 ### 3. Install `artoo` and `socat` gems
-Again, from the terminal the artoo gem
+Again, from the terminal install the artoo gem
 
 	gem install artoo
 	
@@ -40,7 +40,7 @@ Then the socat gem, which manages your connection between artoo and the bluetoot
 
 	gem install artoo-sphero
 
-Once you've installed this gem, you should be ready to *roll*. **Go ahead and close out your current terminal window** just to make sure all changes are sourced to your bash profile. ()This is probably not necessary, just a habit of mine)
+Once you've installed this gem, you should be ready to *roll*. **Go ahead and close out your current terminal window** just to make sure all changes are sourced to your bash profile. (This is probably not necessary, just a habit of mine)
 
 ### 5. Connect to your Sphero
 Now it's time to connect to your Sphero. Open you Macbook's bluetooth preferences, and make sure bluetooth is turned on. Tap your sphero to make sure it is ready for pairing. **If your sphero is already paired/connected to another device, you should turn that connection off**. 
@@ -88,7 +88,7 @@ Here are some of the common error messages I've recieved  after step 7 above
 
 **Resource Busy**
 
-	... socat[25635] ( ... ): Address already in use
+	... socat[25635] ( ... ): Resource Busy
 This one is actually the most common - socat doesn't retry the connection multiple times, so it's possible your connection was refused even though everything was ok (on your phone, if the connection is refused I believe it automatically will retry several times before aborting).
 
 If you get this message, just try to connect again. It should work after a 2-3 of tries. 
