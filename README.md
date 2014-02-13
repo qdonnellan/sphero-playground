@@ -126,7 +126,22 @@ Save the file, and open your teminal again.
 You should have your terminal open, **the same terminal window that is currently connected to the sphero**. If the connection has been lost, connect to it again (step 7 above). 
 
 #### Open a new tab
-Press **command** + **t** to open a new tab in your terminal
+Press **command** + **t** to open a new tab in your terminal. Thus, you should have two tabs you can easily switch back and forth. The first tab is monitoring your (artoo/socat) connection through your bluetooth port
+
+**artoo/socat tab**
+![artoo_connect_scan](docs/doc_images/artoo_socat_tab.png)
+
+
+And the second tab (**after you complete the next steps listed below**) will be monitoring your robot
+
+**ruby/robi tab**
+![artoo_connect_scan](docs/doc_images/ruby_robi_tab.png)
+
+
+
+
+
+
 
 #### Navigate to the desktop
 Or wherever you saved your **first_robot.rb** file
