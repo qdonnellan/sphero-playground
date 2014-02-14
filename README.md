@@ -6,7 +6,7 @@ This is just a collection of useful things when writing ruby programs with [arto
 
 Before you begin you should make sure that you have ruby installed on your system. The [artoo.io getting started](http://artoo.io/documentation/getting-started/) documentation is what you should read first. Here are the boiled-down steps:
 
-> Note: this steps are written by someone who has a **Macbook** (OSX). If you are using Linux the steps should be similar, but I recommend you read the documentation on the artoo.io getting started page!
+> Note: these steps are written by someone who has a **Macbook** (OSX). If you are using Linux the steps should be similar, but I recommend you read the documentation on the artoo.io getting started page!
 
 ### 1. Install `rvm`
 RVM is the "Ruby Version Manager", which makes installing and managing rubies super simple. Run this in a terminal 
