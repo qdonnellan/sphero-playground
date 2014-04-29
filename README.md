@@ -1,5 +1,7 @@
 # sphero-playground
 
+> Note: these instructions are a bit outdated by some changes made by the artoo team (changes are awsesome and make this process simpler, so bear with me as I update this page in the coming days)
+
 This is just a collection of useful things when writing ruby programs with [artoo](http://artoo.io) for the [sphero](http://gosphero.com) robot platform. I'm a total beginner when it comes to ruby and artoo, so hopefully other beginners will find my point of view and tutorials/examples useful when it comes to ramping up skill with these tools/toys. 
 
 ## 10 steps to Sphero on Artoo.io
@@ -56,7 +58,9 @@ Go ahead and pair with it!
 ### 6. Use `artoo connect scan` 
 We now need to actually connect to the sphero's bluetooth port from the terminal. Open up a new terminal and type
 
-	artoo connect scan
+	artoo scan serial
+
+> Note: it looks like in the future you will use `artoo scan bluetooth`
 	
 You should see a list of all devices on your Macbook. Scroll up/down until you've located the obviously-sphero-linked devices line. Here is mine:
 
@@ -69,7 +73,7 @@ Now we are going to connect to the sphero. **The result of this action is that y
 
 In your terminal
 
-	artoo connect serial tty.Sphero-GRO-RN-SPP 8023
+	artoo bluetooth connect tty.Sphero-GRO-RN-SPP 8023
 	
 The serial port **8023** is just some random number I chose. You may pick a different number. 
 
@@ -138,37 +142,20 @@ And the second tab (**after you complete the next steps listed below**) will be 
 ![artoo_connect_scan](docs/doc_images/ruby_robi_tab.png)
 
 
-
-
-
-
-
 #### Navigate to the desktop
 Or wherever you saved your **first_robot.rb** file
 
 	cd Desktop
-
-#### Enter the ROBI console
-
-	robi ./first_robot.rb
-	
-If successful, you should have initiated the robi console:
-
-	Quentins-MacBook-Air:Desktop quentin$ robi ./first_robot.rb
-	I, [2014-02-13T10:57:27.694443 #25838]  INFO -- : Registering connection 'sphero'...
-	I, [2014-02-13T10:57:27.694560 #25838]  INFO -- : Registering device 'sphero'...
-	I, [2014-02-13T10:57:27.694597 #25838]  INFO -- : Preparing work...
-	robi> 
 	
 #### Start your Robot!
 
-Type `start`, press **Enter** and watch the fun happen!
+	artoo start first_robot.rb
 
-### 10. Stop Robot, Destroy Connection
 
-When you are ready to stop your robot, type `stop` from the robi command line and press **enter**. Once stopped, you can exit by typing `exit` and then **enter**.
+### 10. Stop Robot
 
-To destroy your connection to the sphero, open the other tab in your terminal (the one where artoo is currently listening to your sphero) and simply press **control** + **c**. Your sphero should start blinking its color code again - awaiting another connection request.
+To stop the robot, simply press **control** + **c** in the terminal
+
 
 
 
