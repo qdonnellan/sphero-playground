@@ -8,6 +8,4 @@ work do
     sphero.set_color(255,0,0)
     sleep 2
 
-    sphero.stop
-    
 end
