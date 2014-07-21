@@ -11,5 +11,6 @@ work do
 end
 
 def keypress(sender, the_key)
-    sphero.set_color(rand(255),rand(255),rand(255))
+    puts(the_key)
+    sphero.set_color(rand(255), rand(255), rand(255))
 end
